@@ -101,7 +101,7 @@ Button roll,hold,reset;
         if(flag==0){
             Toast.makeText(this, "User Turn", Toast.LENGTH_SHORT).show();
             userScore+=userTurnScore;
-            if(userScore>=20)
+            if(userScore>=50)
             {
 
                 Intent i=new Intent(this,Results.class);
@@ -130,7 +130,7 @@ Button roll,hold,reset;
             compScore+=compTurnScore;
             compStackText.setText("CurrentStack: 0");
 
-            if(compScore>=20)
+            if(compScore>=50)
             {
                 Intent i=new Intent(this,Results.class);
 
