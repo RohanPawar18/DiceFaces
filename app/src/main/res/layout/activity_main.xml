@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dhaval.diceface.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/userScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:text="Your Score: 0"
+
+            />
+
+
+        <TextView
+            android:id="@+id/compScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_weight="0.08"
+            android:text="System score: 0" />
+
+        <ImageView
+            android:id="@+id/diceImage"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="66dp"
+            app:srcCompat="@drawable/dice1" />
+
+        <Button
+            android:id="@+id/roll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/diceImage"
+            android:layout_marginTop="21dp"
+            android:text="ROLL" />
+
+        <Button
+            android:id="@+id/hold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/diceImage"
+            android:layout_alignTop="@+id/roll"
+            android:text="HOLD" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/hold"
+            android:layout_marginStart="29dp"
+            android:layout_toEndOf="@+id/hold"
+            android:text="RESET" />
+
+
+        <TextView
+        android:id="@+id/userStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/userScore"
+        android:layout_below="@+id/compScore"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="33dp"
+        android:text="CurrentStack: 0"
+            />
+        <TextView
+            android:id="@+id/compStack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/compScore"
+            android:layout_below="@+id/compScore"
+            android:layout_marginLeft="205dp"
+            android:layout_marginTop="33dp"
+            android:text="CurrentStack: 0" />
+
+        nTop="33dp"
+        android:text="TextVie
+
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
